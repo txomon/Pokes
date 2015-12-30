@@ -63,4 +63,9 @@ public class Contact {
 
         return stringBuilder.toString();
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return (obj instanceof Contact) && ((Contact) obj).getUserId() == this.getUserId();
+    }
 }
